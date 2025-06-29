@@ -1,0 +1,7 @@
+[mysqld]
+server-id = 1
+log_bin = mysql-bin
+binlog_format = ROW
+expire_logs_days = 7
+sync_binlog = 1
+binlog_do_db = test_db  # 要复制的数据库，不设置则复制所有
